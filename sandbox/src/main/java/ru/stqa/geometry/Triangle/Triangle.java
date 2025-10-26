@@ -15,9 +15,9 @@ public class Triangle {
     }
 
     public static void printTriangleArea(double a, double b, double c) {
-        double p = (a*3)/2;
-        System.out.println("Площадь треугольника со сторонами " + " "+ a +" " + "равен " + Math.sqrt(p * (p - a) * (p - b) * (p - c)));
+        System.out.println("Площадь треугольника со сторонами " + " "+ a +" " + "равен " + area(a, b, c));
     }
+
 
     public static double area(double a, double b, double c) {
         double p = (a*3)/2;
