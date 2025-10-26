@@ -13,7 +13,7 @@ public class TriangleTests {
 
     @Test
     void canCalculateArea() {
-        var result = Triangle.area(7.0,7.0, 7.0, 10.5);
+        var result = Triangle.area(7.0,7.0, 7.0);
         Assertions.assertEquals(21.21762239271875, result);
     }
 }

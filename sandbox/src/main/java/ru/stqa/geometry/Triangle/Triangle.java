@@ -19,7 +19,8 @@ public class Triangle {
         System.out.println("Площадь треугольника со сторонами " + " "+ a +" " + "равен " + Math.sqrt(p * (p - a) * (p - b) * (p - c)));
     }
 
-    public static double area(double a, double b, double c, double p) {
+    public static double area(double a, double b, double c) {
+        double p = (a*3)/2;
         return Math.sqrt(p * (p - a) * (p - b) * (p - c));
     }
 }
