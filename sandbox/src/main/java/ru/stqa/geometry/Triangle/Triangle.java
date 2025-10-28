@@ -1,9 +1,9 @@
 package ru.stqa.geometry.triangle;
 
 public class Triangle {
-    int aSide = 5;
-    int bSide = 5;
-    int cSide = 6;
+    int aSide;
+    int bSide;
+    int cSide;
 
     public Triangle(int aSide, int bSide, int cSide) {
         this.aSide = aSide;
