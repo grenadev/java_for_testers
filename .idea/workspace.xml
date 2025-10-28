@@ -57,7 +57,7 @@
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
   </component>
-  <component name="RunManager" selected="Application.Triangle">
+  <component name="RunManager" selected="Gradle.TriangleTests">
     <configuration name="Hello" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Hello" />
       <module name="sandbox.main" />
@@ -138,7 +138,7 @@
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$/sandbox" />
         <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="--tests &quot;ru.stqa.geometry.Triangle.TriangleTests.canCalculatePerimeter&quot;" />
+        <option name="scriptParameters" value="--tests &quot;ru.stqa.geometry.triangle.TriangleTests.canCalculatePerimeter&quot;" />
         <option name="taskDescriptions">
           <list />
         </option>
@@ -156,10 +156,10 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Gradle.TriangleTests.canCalculateArea" />
         <item itemvalue="Gradle.TriangleTests" />
         <item itemvalue="Gradle.TriangleTests.canCalculatePerimeter" />
-        <item itemvalue="Application.Triangle" />
+        <item itemvalue="Gradle.TriangleTests.canCalculateArea" />
+        <item itemvalue="Gradle.TriangleTests.canCalculatePerimeter" />
         <item itemvalue="Application.Triangle" />
       </list>
     </recent_temporary>
