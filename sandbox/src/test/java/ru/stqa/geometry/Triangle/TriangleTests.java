@@ -16,4 +16,25 @@ public class TriangleTests {
     void canCalculateArea() {
         Assertions.assertEquals(14, new Triangle(5, 6,7).area());
     }
+
+    @Test
+    void cannotCreateTriangleTooBigSide() {
+        try {
+            new Triangle(25, 6,7);
+        } catch (IllegalArgumentException exception) {
+            System.out.println("One of triangle side is too big");
+        }
+    }
+
+
+    @Test
+    void cannotCreateTriangleWithNegativeSide() {
+        try {
+            new Triangle(-5, 5, 6);
+            Assertions.fail();
+        } catch(IllegalArgumentException exception) {
+            System.out.println("One of triangle side is negative");
+        }
+    }
+
 }
