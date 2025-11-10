@@ -48,29 +48,32 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 6
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 6
+}</component>
   <component name="ProjectId" id="34b193tbxN106Vj0GMH4SU6jroo" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Gradle.GroupCreationTests.executor": "Run",
-    "Gradle.GroupCreationTests.test.executor": "Run",
-    "Gradle.GroupRemovalTests.canRemoveGroup.executor": "Run",
-    "Gradle.GroupRemovalTests.test.executor": "Run",
-    "JUnit.TriangleTests.testEquality.executor": "Run",
-    "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "main",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "D:/repository/java_for_testers",
-    "onboarding.tips.debug.path": "D:/repository/java_for_testers/addressbook_web_tests/src/main/java/org/example/Main.java"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Gradle.Download Sources.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.GroupCreationTests.canCreateGroupWithNameOnly.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.GroupCreationTests.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.GroupCreationTests.test.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.GroupRemovalTests.canRemoveGroup.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.GroupRemovalTests.test.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.Tests in 'addressbook_web_tests.test'.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.TriangleTests.testEquality.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/repository/java_for_testers&quot;,
+    &quot;onboarding.tips.debug.path&quot;: &quot;D:/repository/java_for_testers/addressbook_web_tests/src/main/java/org/example/Main.java&quot;
   }
-}]]></component>
-  <component name="RunManager" selected="Gradle.GroupRemovalTests.canRemoveGroup">
+}</component>
+  <component name="RunManager" selected="Gradle.GroupCreationTests">
     <configuration name="GroupCreationTests" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -95,7 +98,7 @@
       <RunAsTest>true</RunAsTest>
       <method v="2" />
     </configuration>
-    <configuration name="GroupCreationTests.test" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="GroupCreationTests.canCreateGroupWithNameOnly" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$/addressbook_web_tests" />
@@ -108,7 +111,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;GroupCreationTests.test&quot;" />
+            <option value="&quot;GroupCreationTests.canCreateGroupWithNameOnly&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -167,36 +170,42 @@
       <RunAsTest>true</RunAsTest>
       <method v="2" />
     </configuration>
-    <configuration name="TriangleTests.testEquality" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="sandbox.test" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="ru.stqa.geometry.triangle.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="ru.stqa.geometry.triangle" />
-      <option name="MAIN_CLASS_NAME" value="ru.stqa.geometry.triangle.TriangleTests" />
-      <option name="METHOD_NAME" value="testEquality" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
+    <configuration name="Tests in 'addressbook_web_tests.test'" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/addressbook_web_tests" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>true</RunAsTest>
+      <method v="2" />
     </configuration>
     <list>
+      <item itemvalue="Gradle.GroupCreationTests.canCreateGroupWithNameOnly" />
+      <item itemvalue="Gradle.Tests in 'addressbook_web_tests.test'" />
       <item itemvalue="Gradle.GroupCreationTests" />
-      <item itemvalue="Gradle.GroupCreationTests.test" />
       <item itemvalue="Gradle.GroupRemovalTests.canRemoveGroup" />
       <item itemvalue="Gradle.GroupRemovalTests.test" />
-      <item itemvalue="JUnit.TriangleTests.testEquality" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.GroupCreationTests" />
+        <item itemvalue="Gradle.GroupCreationTests.canCreateGroupWithNameOnly" />
+        <item itemvalue="Gradle.Tests in 'addressbook_web_tests.test'" />
         <item itemvalue="Gradle.GroupRemovalTests.canRemoveGroup" />
         <item itemvalue="Gradle.GroupRemovalTests.test" />
-        <item itemvalue="Gradle.GroupCreationTests" />
-        <item itemvalue="Gradle.GroupCreationTests.test" />
-        <item itemvalue="JUnit.TriangleTests.testEquality" />
       </list>
     </recent_temporary>
   </component>
