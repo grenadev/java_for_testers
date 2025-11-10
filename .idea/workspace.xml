@@ -66,6 +66,7 @@
     "Gradle.GroupCreationTests.canCreateGroupWithNameOnly.executor": "Run",
     "Gradle.GroupCreationTests.executor": "Run",
     "Gradle.GroupCreationTests.test.executor": "Run",
+    "Gradle.GroupModificationTests.executor": "Run",
     "Gradle.GroupRemovalTests.canRemoveGroup.executor": "Run",
     "Gradle.GroupRemovalTests.test.executor": "Run",
     "Gradle.Tests in 'addressbook_web_tests.test'.executor": "Run",
@@ -89,7 +90,7 @@
       <recent name="ApplicationManager" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Gradle.Tests in 'tests'">
     <configuration name="GroupCreationTests.canCreateGroup" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -104,6 +105,54 @@
             <option value=":test" />
             <option value="--tests" />
             <option value="&quot;tests.GroupCreationTests.canCreateGroup&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>true</RunAsTest>
+      <method v="2" />
+    </configuration>
+    <configuration name="GroupModificationTests" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/addressbook_web_tests" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;tests.GroupModificationTests&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>true</RunAsTest>
+      <method v="2" />
+    </configuration>
+    <configuration name="Tests in 'tests'" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/addressbook_web_tests" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;tests.*&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -131,8 +180,15 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <list>
+      <item itemvalue="Gradle.GroupModificationTests" />
+      <item itemvalue="Gradle.Tests in 'tests'" />
+      <item itemvalue="Gradle.GroupCreationTests.canCreateGroup" />
+    </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.Tests in 'tests'" />
+        <item itemvalue="Gradle.GroupModificationTests" />
         <item itemvalue="Gradle.GroupCreationTests.canCreateGroup" />
         <item itemvalue="JUnit.GroupCreationTests" />
       </list>
