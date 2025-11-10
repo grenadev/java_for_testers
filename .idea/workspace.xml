@@ -73,6 +73,11 @@
     &quot;onboarding.tips.debug.path&quot;: &quot;D:/repository/java_for_testers/addressbook_web_tests/src/main/java/org/example/Main.java&quot;
   }
 }</component>
+  <component name="RecentsManager">
+    <key name="MoveMembersDialog.RECENTS_KEY">
+      <recent name="ApplicationManager" />
+    </key>
+  </component>
   <component name="RunManager" selected="Gradle.GroupCreationTests">
     <configuration name="GroupCreationTests" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
