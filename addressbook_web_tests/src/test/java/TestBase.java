@@ -21,7 +21,6 @@ public class TestBase {
     public void setUp() {
         if (driver == null) {
             driver = new FirefoxDriver();
-            driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(3));
             Runtime.getRuntime().addShutdownHook(new Thread(driver::quit));
             driver.get("http://localhost/addressbook/");
             driver.manage().window().setSize(new Dimension(550, 692));
@@ -42,12 +41,12 @@ public class TestBase {
 
     protected void createGroup(GroupData group) {
         driver.findElement(By.name("new")).click();
-        driver.findElement(By.name("name")).click();
-        driver.findElement(By.name("name")).sendKeys(group.name());
-        driver.findElement(By.name("header")).click();
-        driver.findElement(By.name("header")).sendKeys(group.header());
-        driver.findElement(By.name("footer")).click();
-        driver.findElement(By.name("footer")).sendKeys(group.footer());
+        driver.findElement(By.name("group_name")).click();
+        driver.findElement(By.name("group_name")).sendKeys(group.name());
+        driver.findElement(By.name("group_header")).click();
+        driver.findElement(By.name("group_header")).sendKeys(group.header());
+        driver.findElement(By.name("group_footer")).click();
+        driver.findElement(By.name("group_footer")).sendKeys(group.footer());
         driver.findElement(By.name("submit")).click();
         driver.findElement(By.linkText("group page")).click();
     }
