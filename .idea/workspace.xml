@@ -65,6 +65,7 @@
     "Gradle.CollectionTests.listTest.executor": "Run",
     "Gradle.CollectionTests.listTests.executor": "Run",
     "Gradle.ContactCreationTests.canCreateContact.executor": "Run",
+    "Gradle.ContactCreationTests.canCreateMultipleContacts.executor": "Run",
     "Gradle.ContactRemovalTests.removeContact.executor": "Run",
     "Gradle.Download Sources.executor": "Run",
     "Gradle.GroupCreationTests.canCreateGroup.executor": "Run",
@@ -99,7 +100,31 @@
       <recent name="ApplicationManager" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.GroupCreationTests">
+  <component name="RunManager" selected="Gradle.ContactCreationTests.canCreateMultipleContacts">
+    <configuration name="ContactCreationTests.canCreateMultipleContacts" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/addressbook_web_tests" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;tests.ContactCreationTests.canCreateMultipleContacts&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>true</RunAsTest>
+      <method v="2" />
+    </configuration>
     <configuration name="GroupCreationTests" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -196,62 +221,20 @@
       <RunAsTest>true</RunAsTest>
       <method v="2" />
     </configuration>
-    <configuration name="GroupRemovalTests.canRemoveGroup" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$/addressbook_web_tests" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":test" />
-            <option value="--tests" />
-            <option value="&quot;tests.GroupRemovalTests.canRemoveGroup&quot;" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <RunAsTest>true</RunAsTest>
-      <method v="2" />
-    </configuration>
-    <configuration name="GroupCreationTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="addressbook_web_tests.test" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="tests.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="tests" />
-      <option name="MAIN_CLASS_NAME" value="tests.GroupCreationTests" />
-      <option name="METHOD_NAME" value="" />
-      <option name="TEST_OBJECT" value="class" />
-      <option name="VM_PARAMETERS" value="-ea -Dbrowser=chrome" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <list>
+      <item itemvalue="Gradle.ContactCreationTests.canCreateMultipleContacts" />
       <item itemvalue="Gradle.GroupCreationTests" />
       <item itemvalue="Gradle.GroupCreationTests.canCreateMultipleGroups" />
       <item itemvalue="Gradle.GroupRemovalTests.canRemoveAllGroupsAtOnce" />
-      <item itemvalue="Gradle.GroupRemovalTests.canRemoveGroup" />
       <item itemvalue="Gradle.GroupCreationTests.canCreateGroup" />
-      <item itemvalue="JUnit.GroupCreationTests" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.ContactCreationTests.canCreateMultipleContacts" />
         <item itemvalue="Gradle.GroupCreationTests" />
         <item itemvalue="Gradle.GroupCreationTests.canCreateMultipleGroups" />
         <item itemvalue="Gradle.GroupRemovalTests.canRemoveAllGroupsAtOnce" />
         <item itemvalue="Gradle.GroupCreationTests.canCreateGroup" />
-        <item itemvalue="Gradle.GroupRemovalTests.canRemoveGroup" />
       </list>
     </recent_temporary>
   </component>
