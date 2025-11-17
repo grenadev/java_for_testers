@@ -18,12 +18,15 @@ public class ContactCreationTests extends TestBase{
         for (var first_name : List.of("","first name")) {
             for (var last_name : List.of("", "last name")) {
                 for (var phone : List.of("", "phone")) {
-                    result.add(new ContactData(first_name, last_name, phone));
+                    result.add(new ContactData().withFirstName(first_name).withLastName(last_name).withPhone(phone));
                 }
             }
         }
         for (int i = 0; i < 5; i++) {
-            result.add(new ContactData(randomString(i * 10),randomString(i * 10),randomString(i * 10)));
+            result.add(new ContactData()
+                    .withFirstName(randomString(i * 10))
+                    .withLastName(randomString(i * 10))
+                    .withPhone(randomString(i * 10)));
         }
         return result;
         }

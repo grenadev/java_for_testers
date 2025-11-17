@@ -3,6 +3,9 @@ package manager;
 import model.ContactData;
 import org.openqa.selenium.By;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class ContactHelper extends HelperBase{
     public ContactHelper(ApplicationManager manager) {
         super(manager);
@@ -15,9 +18,25 @@ public class ContactHelper extends HelperBase{
         returnToHomePage();
     }
 
-    public void removeContact() {
+    public void modifyContact(ContactData contact, ContactData modifiedContact) {
         openHomePage();
-        selectContact();
+        selectContactEdit();
+        fillContactForm(modifiedContact);
+        submitContactEdit();
+        returnToHomePage();
+    }
+
+    public void submitContactEdit() {
+        click(By.name("update"));
+    }
+
+    private void selectContactEdit() {
+        click(By.xpath("//*[@id=\"maintable\"]/tbody/tr[7]/td[8]/a/img"));
+    }
+
+    public void removeContact(ContactData contact) {
+        openHomePage();
+        selectContact(contact);
         removeSelectedContact();
         returnToHomePage();
     }
@@ -44,8 +63,8 @@ public class ContactHelper extends HelperBase{
         return manager.driver.findElements(By.name("selected[]")).size();
     }
 
-    private void selectContact() {
-        click(By.name("selected[]"));
+    private void selectContact(ContactData contact) {
+        click(By.cssSelector(String.format("input[value='%s']", contact.id())));
     }
 
     private void removeSelectedContact() {
@@ -64,5 +83,18 @@ public class ContactHelper extends HelperBase{
 
     private void returnToHomePage() {
         click(By.linkText("home page"));
+    }
+
+    public List<ContactData> getList() {
+        openHomePage();
+        var contacts = new ArrayList<ContactData>();
+        var tds = manager.driver.findElements(By.name("entry"));
+        for (var td : tds) {
+            var name = td.getText();
+            var checkbox = td.findElement(By.name("selected[]"));
+            var id = checkbox.getAttribute("value");
+            contacts.add(new ContactData().withContactId(id).withFirstName(name));
+        }
+        return contacts;
     }
 }
