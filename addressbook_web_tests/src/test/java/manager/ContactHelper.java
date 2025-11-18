@@ -20,7 +20,7 @@ public class ContactHelper extends HelperBase{
 
     public void modifyContact(ContactData contact, ContactData modifiedContact) {
         openHomePage();
-        selectContactEdit();
+        selectContactEdit(contact);
         fillContactForm(modifiedContact);
         submitContactEdit();
         returnToHomePage();
@@ -30,8 +30,8 @@ public class ContactHelper extends HelperBase{
         click(By.name("update"));
     }
 
-    private void selectContactEdit() {
-        click(By.xpath("//*[@id=\"maintable\"]/tbody/tr[7]/td[8]/a/img"));
+    private void selectContactEdit(ContactData contact) {
+        click(By.cssSelector("a[href^='edit.php?id=']"));
     }
 
     public void removeContact(ContactData contact) {

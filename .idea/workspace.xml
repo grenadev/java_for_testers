@@ -102,7 +102,31 @@
       <recent name="ApplicationManager" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.ContactModificationTests.canModifyContact">
+  <component name="RunManager" selected="Gradle.ContactCreationTests.canCreateMultipleContacts">
+    <configuration name="ContactCreationTests.canCreateMultipleContacts" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/addressbook_web_tests" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;tests.ContactCreationTests.canCreateMultipleContacts&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>true</RunAsTest>
+      <method v="2" />
+    </configuration>
     <configuration name="ContactModificationTests.canModifyContact" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -141,30 +165,6 @@
             <option value=":test" />
             <option value="--tests" />
             <option value="&quot;tests.ContactRemovalTests.removeContact&quot;" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <RunAsTest>true</RunAsTest>
-      <method v="2" />
-    </configuration>
-    <configuration name="GroupCreationTests.canCreateMultipleGroups" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$/addressbook_web_tests" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":test" />
-            <option value="--tests" />
-            <option value="&quot;tests.GroupCreationTests.canCreateMultipleGroups&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -224,19 +224,19 @@
       <method v="2" />
     </configuration>
     <list>
+      <item itemvalue="Gradle.ContactCreationTests.canCreateMultipleContacts" />
       <item itemvalue="Gradle.ContactModificationTests.canModifyContact" />
       <item itemvalue="Gradle.ContactRemovalTests.removeContact" />
       <item itemvalue="Gradle.GroupModificationTests.canModifyGroup" />
-      <item itemvalue="Gradle.GroupCreationTests.canCreateMultipleGroups" />
       <item itemvalue="Gradle.GroupRemovalTests.canRemoveGroup" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.ContactCreationTests.canCreateMultipleContacts" />
         <item itemvalue="Gradle.ContactModificationTests.canModifyContact" />
         <item itemvalue="Gradle.GroupModificationTests.canModifyGroup" />
         <item itemvalue="Gradle.ContactRemovalTests.removeContact" />
         <item itemvalue="Gradle.GroupRemovalTests.canRemoveGroup" />
-        <item itemvalue="Gradle.GroupCreationTests.canCreateMultipleGroups" />
       </list>
     </recent_temporary>
   </component>
