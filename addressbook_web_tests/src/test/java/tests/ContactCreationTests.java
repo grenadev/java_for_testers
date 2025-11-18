@@ -42,7 +42,6 @@ public void canCreateMultipleContacts(ContactData contact) {
         return Integer.compare(Integer.parseInt(o1.id()), Integer.parseInt(o2.id()));
     };
     newContacts.sort(compareById);
-
     var expectedList = new ArrayList<>(oldContacts);
     expectedList.add(contact.withContactId(newContacts.get(newContacts.size()-1).id()));
     expectedList.sort(compareById);

@@ -31,7 +31,8 @@ public class ContactHelper extends HelperBase{
     }
 
     private void selectContactEdit(ContactData contact) {
-        click(By.cssSelector("a[href^='edit.php?id=']"));
+        click(By.cssSelector(String.format("a[href^='edit.php?id=%s']", contact.id())));
+        //click(By.cssSelector(String.format("input[value='%s']",contact.id())));
     }
 
     public void removeContact(ContactData contact) {
@@ -90,10 +91,13 @@ public class ContactHelper extends HelperBase{
         var contacts = new ArrayList<ContactData>();
         var tds = manager.driver.findElements(By.name("entry"));
         for (var td : tds) {
-            var name = td.getText();
+            //var name = td.getText();
+            var tdFirstName = td.findElement(By.cssSelector("td:nth-child(3)")).getText();
+            var tdLastName = td.findElement(By.cssSelector("td:nth-child(2)")).getText();
+            var tdPhone = td.findElement(By.cssSelector("td:nth-child(6)")).getText();
             var checkbox = td.findElement(By.name("selected[]"));
             var id = checkbox.getAttribute("value");
-            contacts.add(new ContactData().withContactId(id).withFirstName(name));
+            contacts.add(new ContactData().withContactId(id).withFirstName(tdFirstName).withLastName(tdLastName).withPhone(tdPhone));
         }
         return contacts;
     }

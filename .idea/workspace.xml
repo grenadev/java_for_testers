@@ -102,7 +102,7 @@
       <recent name="ApplicationManager" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.ContactCreationTests.canCreateMultipleContacts">
+  <component name="RunManager" selected="Gradle.ContactRemovalTests.removeContact">
     <configuration name="ContactCreationTests.canCreateMultipleContacts" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -232,10 +232,10 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Gradle.ContactCreationTests.canCreateMultipleContacts" />
-        <item itemvalue="Gradle.ContactModificationTests.canModifyContact" />
-        <item itemvalue="Gradle.GroupModificationTests.canModifyGroup" />
         <item itemvalue="Gradle.ContactRemovalTests.removeContact" />
+        <item itemvalue="Gradle.ContactModificationTests.canModifyContact" />
+        <item itemvalue="Gradle.ContactCreationTests.canCreateMultipleContacts" />
+        <item itemvalue="Gradle.GroupModificationTests.canModifyGroup" />
         <item itemvalue="Gradle.GroupRemovalTests.canRemoveGroup" />
       </list>
     </recent_temporary>
