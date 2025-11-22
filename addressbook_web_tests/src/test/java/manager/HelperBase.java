@@ -1,6 +1,9 @@
 package manager;
 
+import model.ContactData;
 import org.openqa.selenium.By;
+
+import java.nio.file.Paths;
 
 public class HelperBase {
 
@@ -18,5 +21,13 @@ public class HelperBase {
         click(locator);
         manager.driver.findElement(locator).clear();
         manager.driver.findElement(locator).sendKeys(text);
+    }
+
+    protected void attach(By locator, String file) {
+        if (file == null || file.isEmpty()) {
+            System.out.println("файл не найден");
+        } else {
+            manager.driver.findElement(locator).sendKeys(Paths.get(file).toAbsolutePath().toString());
+        }
     }
 }

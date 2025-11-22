@@ -50,10 +50,13 @@ public void canCreateMultipleContacts(ContactData contact) {
 
 
 
-
-
     @Test
     void canCreateContact() {
-        app.contact().createContact(new ContactData().withFirstName("Test"));
+        var contact = new ContactData()
+                .withFirstName("ТЕСТ АВАТАР")
+                .withLastName(randomString(10))
+                .withPhoto("src/test/resources/images/avatar.png");
+        app.contact().createContact(contact);
     }
 }
+

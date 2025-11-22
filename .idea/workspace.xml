@@ -59,44 +59,44 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Gradle.CollectionTests.arrayTests.executor": "Run",
-    "Gradle.CollectionTests.listTest.executor": "Run",
-    "Gradle.CollectionTests.listTests.executor": "Run",
-    "Gradle.ContactCreationTests.canCreateContact.executor": "Run",
-    "Gradle.ContactCreationTests.canCreateMultipleContacts.executor": "Run",
-    "Gradle.ContactModificationTests.canModifyContact.executor": "Run",
-    "Gradle.ContactRemovalTests.removeContact.executor": "Run",
-    "Gradle.Download Sources.executor": "Run",
-    "Gradle.GroupCreationTests.canCreateGroup.executor": "Run",
-    "Gradle.GroupCreationTests.canCreateGroupWithNameOnly.executor": "Run",
-    "Gradle.GroupCreationTests.canCreateMultipleGroups.executor": "Run",
-    "Gradle.GroupCreationTests.executor": "Run",
-    "Gradle.GroupCreationTests.test.executor": "Run",
-    "Gradle.GroupModificationTests.canModifyGroup.executor": "Run",
-    "Gradle.GroupModificationTests.executor": "Run",
-    "Gradle.GroupRemovalTests.canRemoveAllGroupsAtOnce.executor": "Run",
-    "Gradle.GroupRemovalTests.canRemoveGroup.executor": "Debug",
-    "Gradle.GroupRemovalTests.test.executor": "Run",
-    "Gradle.Tests in 'addressbook_web_tests.test'.executor": "Run",
-    "Gradle.Tests in 'tests'.executor": "Run",
-    "JUnit.GroupCreationTests (1).executor": "Debug",
-    "JUnit.GroupCreationTests.canCreateGroup (1).executor": "Run",
-    "JUnit.GroupCreationTests.canCreateGroup.executor": "Run",
-    "JUnit.GroupCreationTests.canCreateGroupWithNameOnly.executor": "Debug",
-    "JUnit.GroupCreationTests.executor": "Run",
-    "JUnit.TriangleTests.testEquality.executor": "Run",
-    "Notification.DisplayName-DoNotAsk-git.bad.executable": "Cannot Run Git",
-    "Notification.DoNotAsk-git.bad.executable": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "main",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "D:/repository/java_for_testers",
-    "onboarding.tips.debug.path": "D:/repository/java_for_testers/addressbook_web_tests/src/main/java/org/example/Main.java",
-    "settings.editor.selected.configurable": "reference.settingsdialog.project.gradle"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Gradle.CollectionTests.arrayTests.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.CollectionTests.listTest.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.CollectionTests.listTests.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.ContactCreationTests.canCreateContact.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.ContactCreationTests.canCreateMultipleContacts.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.ContactModificationTests.canModifyContact.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.ContactRemovalTests.removeContact.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.Download Sources.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.GroupCreationTests.canCreateGroup.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.GroupCreationTests.canCreateGroupWithNameOnly.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.GroupCreationTests.canCreateMultipleGroups.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.GroupCreationTests.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.GroupCreationTests.test.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.GroupModificationTests.canModifyGroup.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.GroupModificationTests.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.GroupRemovalTests.canRemoveAllGroupsAtOnce.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.GroupRemovalTests.canRemoveGroup.executor&quot;: &quot;Debug&quot;,
+    &quot;Gradle.GroupRemovalTests.test.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.Tests in 'addressbook_web_tests.test'.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.Tests in 'tests'.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.GroupCreationTests (1).executor&quot;: &quot;Debug&quot;,
+    &quot;JUnit.GroupCreationTests.canCreateGroup (1).executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.GroupCreationTests.canCreateGroup.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.GroupCreationTests.canCreateGroupWithNameOnly.executor&quot;: &quot;Debug&quot;,
+    &quot;JUnit.GroupCreationTests.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.TriangleTests.testEquality.executor&quot;: &quot;Run&quot;,
+    &quot;Notification.DisplayName-DoNotAsk-git.bad.executable&quot;: &quot;Cannot Run Git&quot;,
+    &quot;Notification.DoNotAsk-git.bad.executable&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/repository/java_for_testers&quot;,
+    &quot;onboarding.tips.debug.path&quot;: &quot;D:/repository/java_for_testers/addressbook_web_tests/src/main/java/org/example/Main.java&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settingsdialog.project.gradle&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveMembersDialog.RECENTS_KEY">
       <recent name="ApplicationManager" />
