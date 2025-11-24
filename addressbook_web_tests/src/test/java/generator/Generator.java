@@ -2,7 +2,10 @@ package generator;
 
 import com.beust.jcommander.JCommander;
 import com.beust.jcommander.Parameter;
+import com.fasterxml.jackson.dataformat.xml.XmlMapper;
+import com.fasterxml.jackson.dataformat.yaml.YAMLMapper;
 import common.CommonFunctions;
+import model.ContactData;
 import model.GroupData;
 import tools.jackson.databind.ObjectMapper;
 import tools.jackson.databind.SerializationFeature;
@@ -66,7 +69,14 @@ public class Generator {
 
 
     private Object generateContacts() {
-        return null;
+        var result = new ArrayList<ContactData>();
+        for (int i = 0; i < count; i++) {
+            result.add(new ContactData()
+                    .withFirstName(CommonFunctions.randomString(i * 10))
+                    .withLastName(CommonFunctions.randomString(i * 10))
+                    .withPhone(CommonFunctions.randomString(i * 10)));
+        }
+        return result;
     }
 
     private void save(Object data) throws IOException {
@@ -78,7 +88,7 @@ public class Generator {
             try (var writer = new FileWriter(output)) {
                 writer.write(json);
             }
-        } else {
+        }else {
             throw new IllegalArgumentException("Неизвестный формат данных " + format);
         }
     }
