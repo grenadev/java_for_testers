@@ -18,6 +18,7 @@ public class ContactRecord {
 
     public String lastname;
 
+    @Column (name = "mobile")
     public String phone;
 
 
