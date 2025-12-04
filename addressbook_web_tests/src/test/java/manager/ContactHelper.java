@@ -28,26 +28,14 @@ public class ContactHelper extends HelperBase{
         returnToHomePage();
     }
 
-    private void selectGroup(GroupData group) {
-        new Select(manager.driver.findElement(By.name("new_group"))).selectByValue(group.id());
+    public void createContactWithAGroup(ContactData contact, GroupData group) {
+        openContactPage();
+        fillContactForm(contact);
+        submitContactCreation();
+        returnToHomePage();
+        selectContact(contact);
+        selectGroupAtHomePage(group);
     }
-
-    private void selectGroupWithContacts(GroupData group) {
-        new Select(manager.driver.findElement(By.name("group"))).selectByValue(group.id());
-    }
-
-        public void removeContactFromGroup(ContactData contact, GroupData group) {
-        openHomePage();
-        selectGroupWithContacts(group);
-        removeSelectedContactFromGroup(contact);
-        openHomePage();
-    }
-
-    private void removeSelectedContactFromGroup(ContactData contact) {
-        click(By.cssSelector(String.format("input[value='%s']", contact.id())));
-        click(By.name("remove"));
-    }
-
 
     public void modifyContact(ContactData contact, ContactData modifiedContact) {
         openHomePage();
@@ -57,13 +45,11 @@ public class ContactHelper extends HelperBase{
         returnToHomePage();
     }
 
-    public void submitContactEdit() {
-        click(By.name("update"));
-    }
-
-    private void selectContactEdit(ContactData contact) {
-        click(By.cssSelector(String.format("a[href^='edit.php?id=%s']", contact.id())));
-        //click(By.cssSelector(String.format("input[value='%s']",contact.id())));
+    public void removeContactFromGroup(ContactData contact, GroupData group) {
+        openHomePage();
+        selectGroupWithContacts(group);
+        removeSelectedContactFromGroup(contact);
+        openHomePage();
     }
 
     public void removeContact(ContactData contact) {
@@ -73,13 +59,40 @@ public class ContactHelper extends HelperBase{
         returnToHomePage();
     }
 
-
-
     private void fillContactForm(ContactData contact) {
         type(By.name("firstname"), contact.first_name());
         type(By.name("lastname"), contact.last_name());
         type(By.name("mobile"), contact.phone());
         attach(By.name("photo"), contact.photo());
+    }
+
+    private void selectGroup(GroupData group) {
+        new Select(manager.driver.findElement(By.name("new_group"))).selectByValue(group.id());
+    }
+
+    private void selectGroupAtHomePage(GroupData group) {
+        new Select(manager.driver.findElement(By.name("to_group"))).selectByValue(group.id());
+        click(By.name("add"));
+    }
+
+    private void selectGroupWithContacts(GroupData group) {
+        new Select(manager.driver.findElement(By.name("group"))).selectByValue(group.id());
+    }
+
+
+    private void removeSelectedContactFromGroup(ContactData contact) {
+        click(By.cssSelector(String.format("input[value='%s']", contact.id())));
+        click(By.name("remove"));
+    }
+
+
+    public void submitContactEdit() {
+        click(By.name("update"));
+    }
+
+    private void selectContactEdit(ContactData contact) {
+        click(By.cssSelector(String.format("a[href^='edit.php?id=%s']", contact.id())));
+        //click(By.cssSelector(String.format("input[value='%s']",contact.id())));
     }
 
     private void openHomePage() {
