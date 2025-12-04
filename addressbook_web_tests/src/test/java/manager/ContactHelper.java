@@ -40,7 +40,7 @@ public class ContactHelper extends HelperBase{
         openHomePage();
         selectGroupWithContacts(group);
         removeSelectedContactFromGroup(contact);
-        returnToHomePage();
+        openHomePage();
     }
 
     private void removeSelectedContactFromGroup(ContactData contact) {
