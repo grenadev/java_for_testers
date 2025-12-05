@@ -60,7 +60,7 @@
     "Gradle.CollectionTests.listTest.executor": "Run",
     "Gradle.CollectionTests.listTests.executor": "Run",
     "Gradle.ContactCreationTests.canCreateContact.executor": "Run",
-    "Gradle.ContactCreationTests.canCreateContactAndAddToAGroup.executor": "Debug",
+    "Gradle.ContactCreationTests.canCreateContactAndAddToAGroup.executor": "Run",
     "Gradle.ContactCreationTests.canCreateContactInGroup.executor": "Run",
     "Gradle.ContactCreationTests.canCreateMultipleContacts.executor": "Run",
     "Gradle.ContactModificationTests.canModifyContact.executor": "Run",

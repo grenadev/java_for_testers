@@ -1,6 +1,7 @@
 package tests;
 
 import common.CommonFunctions;
+import manager.hbm.ContactRecord;
 import model.ContactData;
 import model.GroupData;
 import org.junit.jupiter.api.Assertions;
@@ -18,7 +19,7 @@ import java.util.Comparator;
 import java.util.List;
 
 
-public class ContactCreationTests extends TestBase{
+public class ContactCreationTests extends TestBase {
 
 
     public static List<ContactData> contactProvider() throws IOException {
@@ -35,34 +36,34 @@ public class ContactCreationTests extends TestBase{
              var breader = new BufferedReader(reader)
         ) {
             var line = breader.readLine();
-            while(line != null) {
+            while (line != null) {
                 json = json + line;
                 line = breader.readLine();
             }
         }
         //var json = Files.readString(Paths.get("groups.json"));
         ObjectMapper mapper = new ObjectMapper();
-        var value = mapper.readValue(json, new TypeReference<List<ContactData>>() {});
+        var value = mapper.readValue(json, new TypeReference<List<ContactData>>() {
+        });
         result.addAll(value);
         return result;
     }
 
-@ParameterizedTest
-@MethodSource("contactProvider")
-public void canCreateMultipleContacts(ContactData contact) {
-    var oldContacts = app.hbm().getContactList();
-    app.contact().createContact(contact);
-    var newContacts = app.hbm().getContactList();
-    Comparator<ContactData> compareById = (o1, o2) -> {
-        return Integer.compare(Integer.parseInt(o1.id()), Integer.parseInt(o2.id()));
-    };
-    newContacts.sort(compareById);
-    var expectedList = new ArrayList<>(oldContacts);
-    expectedList.add(contact.withContactId(newContacts.get(newContacts.size()-1).id()));
-    expectedList.sort(compareById);
-    Assertions.assertEquals(newContacts,expectedList);
-}
-
+    @ParameterizedTest
+    @MethodSource("contactProvider")
+    public void canCreateMultipleContacts(ContactData contact) {
+        var oldContacts = app.hbm().getContactList();
+        app.contact().createContact(contact);
+        var newContacts = app.hbm().getContactList();
+        Comparator<ContactData> compareById = (o1, o2) -> {
+            return Integer.compare(Integer.parseInt(o1.id()), Integer.parseInt(o2.id()));
+        };
+        newContacts.sort(compareById);
+        var expectedList = new ArrayList<>(oldContacts);
+        expectedList.add(contact.withContactId(newContacts.get(newContacts.size() - 1).id()));
+        expectedList.sort(compareById);
+        Assertions.assertEquals(newContacts, expectedList);
+    }
 
 
     @Test
@@ -93,19 +94,19 @@ public void canCreateMultipleContacts(ContactData contact) {
 
     @Test
     void canCreateContactAndAddToAGroup() {
-            var contact = new ContactData()
-                    .withFirstName("ТЕСТ АВАТАР")
-                    .withLastName(CommonFunctions.randomString(10))
-                    .withPhoto(randomFile("src/test/resources/images"));
-            if (app.hbm().getGroupCount() == 0) {
-                app.hbm().createGroup(new GroupData("", "group name", "group header", "group footer"));
-            }
-            var group = app.hbm().getGroupList().get(0);
+        var contact = new ContactData()
+                .withFirstName("ТЕСТ АВАТАР")
+                .withLastName(CommonFunctions.randomString(10))
+                .withPhoto(randomFile("src/test/resources/images"));
+        if (app.hbm().getGroupCount() == 0) {
+            app.hbm().createGroup(new GroupData("", "group name", "group header", "group footer"));
+        }
+        var group = app.hbm().getGroupList().get(0);
 
-            var oldRelated = app.hbm().getContactsInGroup(group);
-            app.contact().createContactWithAGroup(contact, group);
-            var newRelated = app.hbm().getContactsInGroup(group);
-            Assertions.assertEquals(oldRelated.size() + 1, newRelated.size());
+        var oldRelated = app.hbm().getContactsInGroup(group);
+        app.contact().createContactWithAGroup(contact, group);
+        var newRelated = app.hbm().getContactsInGroup(group);
+        Assertions.assertEquals(oldRelated.size() + 1, newRelated.size());
     }
 }
 

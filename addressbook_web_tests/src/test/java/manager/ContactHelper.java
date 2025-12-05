@@ -8,7 +8,7 @@ import org.openqa.selenium.support.ui.Select;
 import java.util.ArrayList;
 import java.util.List;
 
-public class ContactHelper extends HelperBase{
+public class ContactHelper extends HelperBase {
     public ContactHelper(ApplicationManager manager) {
         super(manager);
     }
@@ -30,10 +30,13 @@ public class ContactHelper extends HelperBase{
 
     public void createContactWithAGroup(ContactData contact, GroupData group) {
         openContactPage();
+        var oldContacts = manager.hbm().getContactList();
         fillContactForm(contact);
         submitContactCreation();
         returnToHomePage();
-        selectContact(contact);
+        var newContacts = manager.hbm().getContactList();
+        newContacts.removeAll(oldContacts);
+        selectContact(newContacts.get(0));
         selectGroupAtHomePage(group);
     }
 
