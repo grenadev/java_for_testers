@@ -64,6 +64,10 @@
     "Gradle.ContactCreationTests.canCreateContactAndAddToAGroup.executor": "Run",
     "Gradle.ContactCreationTests.canCreateContactInGroup.executor": "Run",
     "Gradle.ContactCreationTests.canCreateMultipleContacts.executor": "Run",
+    "Gradle.ContactInfoTests.testContactData.executor": "Debug",
+    "Gradle.ContactInfoTests.testEmails.executor": "Debug",
+    "Gradle.ContactInfoTests.testPhones.executor": "Debug",
+    "Gradle.ContactInfoTests.testTest.executor": "Debug",
     "Gradle.ContactModificationTests.canModifyContact.executor": "Run",
     "Gradle.ContactRemovalTests.canRemoveContactFromGroup.executor": "Run",
     "Gradle.ContactRemovalTests.removeContact.executor": "Debug",
@@ -108,8 +112,8 @@
       <recent name="D:\repository\java_for_testers\addressbook_web_tests\src\test\resources\avatar2" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.GroupCreationTests.canCreateGroup">
-    <configuration name="CollectionTests.setTests" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+  <component name="RunManager" selected="Gradle.ContactInfoTests.testContactData">
+    <configuration name="ContactInfoTests.testContactData" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$/addressbook_web_tests" />
@@ -122,7 +126,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;ru.stqa.collections.CollectionTests.setTests&quot;" />
+            <option value="&quot;tests.ContactInfoTests.testContactData&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -133,7 +137,7 @@
       <RunAsTest>true</RunAsTest>
       <method v="2" />
     </configuration>
-    <configuration name="ContactCreationTests.canCreateContactAndAddToAGroup" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="ContactInfoTests.testEmails" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$/addressbook_web_tests" />
@@ -146,7 +150,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;tests.ContactCreationTests.canCreateContactAndAddToAGroup&quot;" />
+            <option value="&quot;tests.ContactInfoTests.testEmails&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -157,7 +161,7 @@
       <RunAsTest>true</RunAsTest>
       <method v="2" />
     </configuration>
-    <configuration name="ContactRemovalTests.removeContact" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="ContactInfoTests.testPhones" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$/addressbook_web_tests" />
@@ -170,7 +174,31 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;tests.ContactRemovalTests.removeContact&quot;" />
+            <option value="&quot;tests.ContactInfoTests.testPhones&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>true</RunAsTest>
+      <method v="2" />
+    </configuration>
+    <configuration name="ContactInfoTests.testTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/addressbook_web_tests" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;tests.ContactInfoTests.testTest&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -205,44 +233,20 @@
       <RunAsTest>true</RunAsTest>
       <method v="2" />
     </configuration>
-    <configuration name="GroupModificationTests.canModifyGroup" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$/addressbook_web_tests" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":test" />
-            <option value="--tests" />
-            <option value="&quot;tests.GroupModificationTests.canModifyGroup&quot;" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <RunAsTest>true</RunAsTest>
-      <method v="2" />
-    </configuration>
     <list>
-      <item itemvalue="Gradle.CollectionTests.setTests" />
-      <item itemvalue="Gradle.ContactCreationTests.canCreateContactAndAddToAGroup" />
-      <item itemvalue="Gradle.ContactRemovalTests.removeContact" />
+      <item itemvalue="Gradle.ContactInfoTests.testContactData" />
+      <item itemvalue="Gradle.ContactInfoTests.testEmails" />
+      <item itemvalue="Gradle.ContactInfoTests.testPhones" />
+      <item itemvalue="Gradle.ContactInfoTests.testTest" />
       <item itemvalue="Gradle.GroupCreationTests.canCreateGroup" />
-      <item itemvalue="Gradle.GroupModificationTests.canModifyGroup" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.ContactInfoTests.testContactData" />
+        <item itemvalue="Gradle.ContactInfoTests.testTest" />
+        <item itemvalue="Gradle.ContactInfoTests.testEmails" />
+        <item itemvalue="Gradle.ContactInfoTests.testPhones" />
         <item itemvalue="Gradle.GroupCreationTests.canCreateGroup" />
-        <item itemvalue="Gradle.GroupModificationTests.canModifyGroup" />
-        <item itemvalue="Gradle.CollectionTests.setTests" />
-        <item itemvalue="Gradle.ContactCreationTests.canCreateContactAndAddToAGroup" />
-        <item itemvalue="Gradle.ContactRemovalTests.removeContact" />
       </list>
     </recent_temporary>
   </component>
@@ -271,6 +275,11 @@
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
+    <watches-manager>
+      <configuration name="GradleRunConfiguration">
+        <watch expression="contactMap" />
+      </configuration>
+    </watches-manager>
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

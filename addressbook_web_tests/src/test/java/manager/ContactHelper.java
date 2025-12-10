@@ -3,10 +3,13 @@ package manager;
 import model.ContactData;
 import model.GroupData;
 import org.openqa.selenium.By;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.Select;
 
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 public class ContactHelper extends HelperBase {
     public ContactHelper(ApplicationManager manager) {
@@ -28,7 +31,14 @@ public class ContactHelper extends HelperBase {
         returnToHomePage();
     }
 
-    public void createContactWithAGroup(ContactData contact, GroupData group) {
+    public void createContactForDataTest(ContactData contact) {
+        openHomePage();
+        getAddress(contact);
+        getEmails(contact);
+        getPhones(contact);
+    }
+
+    public void getContactWithAGroup(ContactData contact, GroupData group) {
         openContactPage();
         var oldContacts = manager.hbm().getContactList();
         fillContactForm(contact);
@@ -65,9 +75,49 @@ public class ContactHelper extends HelperBase {
     private void fillContactForm(ContactData contact) {
         type(By.name("firstname"), contact.first_name());
         type(By.name("lastname"), contact.last_name());
-        type(By.name("mobile"), contact.phone());
+        //type(By.name("mobile"), contact.phone());
         attach(By.name("photo"), contact.photo());
     }
+
+//    private void getContactFormData(ContactData contact) {
+//        openHomePage();
+//        selectContactEdit(contact);
+//        manager.driver.findElement(By.name("home")).getText();
+//        manager.driver.findElement(By.name("mobile")).getText();
+//        manager.driver.findElement(By.name("work")).getText();
+//        manager.driver.findElement(By.name("address")).getText();
+//        manager.driver.findElement(By.name("email")).getText();
+//        manager.driver.findElement(By.name("email2")).getText();
+//        manager.driver.findElement(By.name("email3")).getText();
+//        return new ContactData().withHome(manager.driver.findElement(By.name("home")).getText())
+//                .withMobile(manager.driver.findElement(By.name("mobile")).getText())
+//                .withWork(manager.driver.findElement(By.name("work")).getText())
+//                .withAddress(manager.driver.findElement(By.name("address")).getText())
+//                .withEmail(manager.driver.findElement(By.name("email")).getText())
+//                .withEmail2(manager.driver.findElement(By.name("email2")).getText())
+//                .withEmail3(manager.driver.findElement(By.name("email3")).getText())
+//    }
+
+    public ContactData getContactFormData(ContactData contact) {
+        openHomePage();
+        selectContactEdit(contact);
+            String home = manager.driver.findElement(By.name("home")).getAttribute("value");
+            String mobile = manager.driver.findElement(By.name("mobile")).getAttribute("value");
+            String work = manager.driver.findElement(By.name("work")).getAttribute("value");
+            String email = manager.driver.findElement(By.name("email")).getAttribute("value");
+            String email2 = manager.driver.findElement(By.name("email2")).getAttribute("value");
+            String email3 = manager.driver.findElement(By.name("email3")).getAttribute("value");
+            String address = manager.driver.findElement(By.name("address")).getText();
+            return new ContactData()
+                    .withContactId(contact.id())
+                    .withHome(home)
+                    .withMobile(mobile)
+                    .withWork(work)
+                    .withAddress(address)
+                    .withEmail(email)
+                    .withEmail2(email2)
+                    .withEmail3(email3);
+        }
 
     private void selectGroup(GroupData group) {
         new Select(manager.driver.findElement(By.name("new_group"))).selectByValue(group.id());
@@ -145,14 +195,53 @@ public class ContactHelper extends HelperBase {
             var tdFirstName = td.findElement(By.cssSelector("td:nth-child(3)")).getText();
             var tdLastName = td.findElement(By.cssSelector("td:nth-child(2)")).getText();
             var tdPhone = td.findElement(By.cssSelector("td:nth-child(6)")).getText();
+            var tdAddress = td.findElement(By.cssSelector("td:nth-child(4)")).getText();
+            var tdEmails = td.findElement(By.cssSelector("td:nth-child(5)")).getText();
             var checkbox = td.findElement(By.name("selected[]"));
             var id = checkbox.getAttribute("value");
-            contacts.add(new ContactData().withContactId(id).withFirstName(tdFirstName).withLastName(tdLastName).withPhone(tdPhone));
+            contacts.add(new ContactData().withContactId(id).withFirstName(tdFirstName)
+                    .withLastName(tdLastName)
+                    .withPhone(tdPhone)
+                    .withAddress(tdAddress)
+                    .withEmail(tdEmails));
         }
         return contacts;
     }
 
+
+
     public String getPhones(ContactData contact) {
        return manager.driver.findElement(By.xpath(String.format("//input[@id='%s']/../../td[6]", contact.id()))).getText();
+    }
+
+    public Map<String, String> getPhones() {
+        var result = new HashMap<String, String>();
+        List<WebElement> rows = manager.driver.findElements(By.name("entry"));
+        for (WebElement row : rows) {
+            var id = row.findElement(By.tagName("input")).getAttribute("id");
+            var phones = row.findElements(By.tagName("td")).get(5).getText();
+            result.put(id, phones);
+        }
+        return result;
+    }
+
+
+    public Map<String, String> getEmails() {
+        var result = new HashMap<String, String>();
+        List<WebElement> rows = manager.driver.findElements(By.name("entry"));
+        for (WebElement row : rows) {
+            var id = row.findElement(By.tagName("input")).getAttribute("id");
+            var emails = row.findElements(By.tagName("td")).get(4).getText();
+            result.put(id, emails);
+        }
+        return result;
+    }
+
+    public String getEmails(ContactData contact) {
+        return manager.driver.findElement(By.xpath(String.format("//input[@id='%s']/../../td[5]", contact.id()))).getText();
+    }
+
+    public String getAddress(ContactData contact) {
+        return manager.driver.findElement(By.xpath(String.format("//input[@id='%s']/../../td[4]", contact.id()))).getText();
     }
 }
