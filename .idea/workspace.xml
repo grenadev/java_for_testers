@@ -14,6 +14,9 @@
     <projectState path="$PROJECT_DIR$/addressbook_web_tests">
       <ProjectState />
     </projectState>
+    <projectState path="$PROJECT_DIR$/mantis_tests">
+      <ProjectState />
+    </projectState>
     <projectState path="$PROJECT_DIR$/sandbox">
       <ProjectState />
     </projectState>
@@ -83,6 +86,7 @@
     "Gradle.GroupRemovalTests.canRemoveAllGroupsAtOnce.executor": "Run",
     "Gradle.GroupRemovalTests.canRemoveGroup.executor": "Debug",
     "Gradle.GroupRemovalTests.test.executor": "Run",
+    "Gradle.LoginTests.canLogin.executor": "Debug",
     "Gradle.Tests in 'addressbook_web_tests.test'.executor": "Run",
     "Gradle.Tests in 'tests'.executor": "Run",
     "Gradle.addressbook_web_tests [:generator.Generator.main()].executor": "Run",
@@ -97,12 +101,18 @@
     "RunOnceActivity.git.unshallow": "true",
     "git-widget-placeholder": "main",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "D:/repository/java_for_testers",
+    "last_opened_file_path": "D:/repository/java_for_testers/mantis_tests",
     "onboarding.tips.debug.path": "D:/repository/java_for_testers/addressbook_web_tests/src/main/java/org/example/Main.java",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
     "settings.editor.selected.configurable": "reference.settingsdialog.project.gradle"
   }
 }]]></component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\repository\java_for_testers\mantis_tests" />
+    </key>
     <key name="MoveMembersDialog.RECENTS_KEY">
       <recent name="common.CommonFunctions" />
       <recent name="ApplicationManager" />
@@ -112,7 +122,7 @@
       <recent name="D:\repository\java_for_testers\addressbook_web_tests\src\test\resources\avatar2" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.ContactInfoTests.testContactData">
+  <component name="RunManager" selected="Gradle.LoginTests.canLogin">
     <configuration name="ContactInfoTests.testContactData" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -209,10 +219,10 @@
       <RunAsTest>true</RunAsTest>
       <method v="2" />
     </configuration>
-    <configuration name="GroupCreationTests.canCreateGroup" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="LoginTests.canLogin" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$/addressbook_web_tests" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/mantis_tests" />
         <option name="externalSystemIdString" value="GRADLE" />
         <option name="scriptParameters" value="" />
         <option name="taskDescriptions">
@@ -222,7 +232,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;tests.GroupCreationTests.canCreateGroup&quot;" />
+            <option value="&quot;ru.stqa.mantis.tests.LoginTests.canLogin&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -234,19 +244,19 @@
       <method v="2" />
     </configuration>
     <list>
+      <item itemvalue="Gradle.LoginTests.canLogin" />
       <item itemvalue="Gradle.ContactInfoTests.testContactData" />
       <item itemvalue="Gradle.ContactInfoTests.testEmails" />
       <item itemvalue="Gradle.ContactInfoTests.testPhones" />
       <item itemvalue="Gradle.ContactInfoTests.testTest" />
-      <item itemvalue="Gradle.GroupCreationTests.canCreateGroup" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.LoginTests.canLogin" />
         <item itemvalue="Gradle.ContactInfoTests.testContactData" />
         <item itemvalue="Gradle.ContactInfoTests.testTest" />
         <item itemvalue="Gradle.ContactInfoTests.testEmails" />
         <item itemvalue="Gradle.ContactInfoTests.testPhones" />
-        <item itemvalue="Gradle.GroupCreationTests.canCreateGroup" />
       </list>
     </recent_temporary>
   </component>
@@ -272,6 +282,11 @@
           <url>file://$PROJECT_DIR$/addressbook_web_tests/src/test/java/common/CommonFunctions.java</url>
           <line>11</line>
           <option name="timeStamp" value="35" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/mantis_tests/src/test/java/ru/stqa/mantis/manager/SessionHelper.java</url>
+          <line>14</line>
+          <option name="timeStamp" value="38" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
