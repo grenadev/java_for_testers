@@ -30,6 +30,9 @@
         <task path="$PROJECT_DIR$/addressbook_web_tests">
           <activation />
         </task>
+        <task path="$PROJECT_DIR$/mantis_tests">
+          <activation />
+        </task>
         <projects_view>
           <tree_state>
             <expand />
@@ -42,6 +45,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Record" />
         <option value="Class" />
       </list>
     </option>
@@ -86,9 +90,14 @@
     "Gradle.GroupRemovalTests.canRemoveAllGroupsAtOnce.executor": "Run",
     "Gradle.GroupRemovalTests.canRemoveGroup.executor": "Debug",
     "Gradle.GroupRemovalTests.test.executor": "Run",
-    "Gradle.LoginTests.canLogin.executor": "Debug",
+    "Gradle.JamesTests.canCreateUser.executor": "Run",
+    "Gradle.LoginTests.canLogin.executor": "Run",
+    "Gradle.MailTests.canDrainInbox.executor": "Run",
+    "Gradle.MailTests.canExtractUrl.executor": "Run",
+    "Gradle.MailTests.canReceiveEmail.executor": "Run",
     "Gradle.Tests in 'addressbook_web_tests.test'.executor": "Run",
     "Gradle.Tests in 'tests'.executor": "Run",
+    "Gradle.UserRegistrationTests.canRegisterUser.executor": "Debug",
     "Gradle.addressbook_web_tests [:generator.Generator.main()].executor": "Run",
     "JUnit.GroupCreationTests (1).executor": "Debug",
     "JUnit.GroupCreationTests.canCreateGroup (1).executor": "Run",
@@ -101,7 +110,7 @@
     "RunOnceActivity.git.unshallow": "true",
     "git-widget-placeholder": "main",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "D:/repository/java_for_testers/mantis_tests",
+    "last_opened_file_path": "D:/repository/java_for_testers/mantis_tests/src/test/java/ru/stqa/mantis",
     "onboarding.tips.debug.path": "D:/repository/java_for_testers/addressbook_web_tests/src/main/java/org/example/Main.java",
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.0",
@@ -111,6 +120,7 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\repository\java_for_testers\mantis_tests\src\test\java\ru\stqa\mantis" />
       <recent name="D:\repository\java_for_testers\mantis_tests" />
     </key>
     <key name="MoveMembersDialog.RECENTS_KEY">
@@ -122,104 +132,8 @@
       <recent name="D:\repository\java_for_testers\addressbook_web_tests\src\test\resources\avatar2" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.LoginTests.canLogin">
-    <configuration name="ContactInfoTests.testContactData" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$/addressbook_web_tests" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":test" />
-            <option value="--tests" />
-            <option value="&quot;tests.ContactInfoTests.testContactData&quot;" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <RunAsTest>true</RunAsTest>
-      <method v="2" />
-    </configuration>
-    <configuration name="ContactInfoTests.testEmails" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$/addressbook_web_tests" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":test" />
-            <option value="--tests" />
-            <option value="&quot;tests.ContactInfoTests.testEmails&quot;" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <RunAsTest>true</RunAsTest>
-      <method v="2" />
-    </configuration>
-    <configuration name="ContactInfoTests.testPhones" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$/addressbook_web_tests" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":test" />
-            <option value="--tests" />
-            <option value="&quot;tests.ContactInfoTests.testPhones&quot;" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <RunAsTest>true</RunAsTest>
-      <method v="2" />
-    </configuration>
-    <configuration name="ContactInfoTests.testTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$/addressbook_web_tests" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":test" />
-            <option value="--tests" />
-            <option value="&quot;tests.ContactInfoTests.testTest&quot;" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <RunAsTest>true</RunAsTest>
-      <method v="2" />
-    </configuration>
-    <configuration name="LoginTests.canLogin" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+  <component name="RunManager" selected="Gradle.UserRegistrationTests.canRegisterUser">
+    <configuration name="JamesTests.canCreateUser" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$/mantis_tests" />
@@ -232,7 +146,103 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;ru.stqa.mantis.tests.LoginTests.canLogin&quot;" />
+            <option value="&quot;ru.stqa.mantis.tests.JamesTests.canCreateUser&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>true</RunAsTest>
+      <method v="2" />
+    </configuration>
+    <configuration name="MailTests.canDrainInbox" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/mantis_tests" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;ru.stqa.mantis.tests.MailTests.canDrainInbox&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>true</RunAsTest>
+      <method v="2" />
+    </configuration>
+    <configuration name="MailTests.canExtractUrl" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/mantis_tests" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;ru.stqa.mantis.tests.MailTests.canExtractUrl&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>true</RunAsTest>
+      <method v="2" />
+    </configuration>
+    <configuration name="MailTests.canReceiveEmail" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/mantis_tests" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;ru.stqa.mantis.tests.MailTests.canReceiveEmail&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>true</RunAsTest>
+      <method v="2" />
+    </configuration>
+    <configuration name="UserRegistrationTests.canRegisterUser" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/mantis_tests" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;ru.stqa.mantis.tests.UserRegistrationTests.canRegisterUser&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -244,19 +254,19 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Gradle.LoginTests.canLogin" />
-      <item itemvalue="Gradle.ContactInfoTests.testContactData" />
-      <item itemvalue="Gradle.ContactInfoTests.testEmails" />
-      <item itemvalue="Gradle.ContactInfoTests.testPhones" />
-      <item itemvalue="Gradle.ContactInfoTests.testTest" />
+      <item itemvalue="Gradle.JamesTests.canCreateUser" />
+      <item itemvalue="Gradle.MailTests.canDrainInbox" />
+      <item itemvalue="Gradle.MailTests.canExtractUrl" />
+      <item itemvalue="Gradle.MailTests.canReceiveEmail" />
+      <item itemvalue="Gradle.UserRegistrationTests.canRegisterUser" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Gradle.LoginTests.canLogin" />
-        <item itemvalue="Gradle.ContactInfoTests.testContactData" />
-        <item itemvalue="Gradle.ContactInfoTests.testTest" />
-        <item itemvalue="Gradle.ContactInfoTests.testEmails" />
-        <item itemvalue="Gradle.ContactInfoTests.testPhones" />
+        <item itemvalue="Gradle.UserRegistrationTests.canRegisterUser" />
+        <item itemvalue="Gradle.MailTests.canExtractUrl" />
+        <item itemvalue="Gradle.MailTests.canReceiveEmail" />
+        <item itemvalue="Gradle.MailTests.canDrainInbox" />
+        <item itemvalue="Gradle.JamesTests.canCreateUser" />
       </list>
     </recent_temporary>
   </component>
@@ -279,14 +289,9 @@
           <option name="timeStamp" value="21" />
         </breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/addressbook_web_tests/src/test/java/common/CommonFunctions.java</url>
-          <line>11</line>
-          <option name="timeStamp" value="35" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/mantis_tests/src/test/java/ru/stqa/mantis/manager/SessionHelper.java</url>
-          <line>14</line>
-          <option name="timeStamp" value="38" />
+          <url>file://$PROJECT_DIR$/mantis_tests/src/test/java/ru/stqa/mantis/tests/UserRegistrationTests.java</url>
+          <line>44</line>
+          <option name="timeStamp" value="44" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
