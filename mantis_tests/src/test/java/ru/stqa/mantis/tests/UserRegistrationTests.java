@@ -7,18 +7,7 @@ import java.time.Duration;
 import java.util.regex.Pattern;
 
 public class UserRegistrationTests extends TestBase{
-
-//    @Test
-//    void canRegisterUser(String username) {
-//        var email = String.format("%s@localhost", username);
-//        //1создать пользователя (адрес) на почтовом сервере (JamesHelper)
-//        //2заполняем форму создания и отправляем (браузер) - создать класс помощник с этими действиями
-//        //3ждем почту (MailHelper)
-//        //4извлекаем ссылку из письма
-//        //5проходим по ссылке и завершаем регистрацию (браузер) - создать класс помощник из шага 2
-//        //6проверяем, что пользователь может залогиниться (HttpSessionHelper)
-//
-//    }
+    
 
     @Test
     void canRegisterUser() {

@@ -97,7 +97,7 @@
     "Gradle.MailTests.canReceiveEmail.executor": "Run",
     "Gradle.Tests in 'addressbook_web_tests.test'.executor": "Run",
     "Gradle.Tests in 'tests'.executor": "Run",
-    "Gradle.UserRegistrationTests.canRegisterUser.executor": "Debug",
+    "Gradle.UserRegistrationTests.canRegisterUser.executor": "Run",
     "Gradle.addressbook_web_tests [:generator.Generator.main()].executor": "Run",
     "JUnit.GroupCreationTests (1).executor": "Debug",
     "JUnit.GroupCreationTests.canCreateGroup (1).executor": "Run",
@@ -288,11 +288,6 @@
           <properties class="org.opentest4j.AssertionFailedError" package="org.opentest4j" />
           <option name="timeStamp" value="21" />
         </breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/mantis_tests/src/test/java/ru/stqa/mantis/tests/UserRegistrationTests.java</url>
-          <line>44</line>
-          <option name="timeStamp" value="44" />
-        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
     <watches-manager>
