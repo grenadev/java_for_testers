@@ -63,6 +63,7 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Gradle.Build mantis_tests.executor": "Run",
     "Gradle.CollectionTests.arrayTests.executor": "Run",
     "Gradle.CollectionTests.listTest.executor": "Run",
     "Gradle.CollectionTests.listTests.executor": "Run",
@@ -90,6 +91,7 @@
     "Gradle.GroupRemovalTests.canRemoveAllGroupsAtOnce.executor": "Run",
     "Gradle.GroupRemovalTests.canRemoveGroup.executor": "Debug",
     "Gradle.GroupRemovalTests.test.executor": "Run",
+    "Gradle.IssueCreationTests.canCreateIssue.executor": "Run",
     "Gradle.JamesTests.canCreateUser.executor": "Run",
     "Gradle.LoginTests.canLogin.executor": "Run",
     "Gradle.MailTests.canDrainInbox.executor": "Run",
@@ -97,6 +99,7 @@
     "Gradle.MailTests.canReceiveEmail.executor": "Run",
     "Gradle.Tests in 'addressbook_web_tests.test'.executor": "Run",
     "Gradle.Tests in 'tests'.executor": "Run",
+    "Gradle.UserRegistrationTests.canCreateUser.executor": "Run",
     "Gradle.UserRegistrationTests.canRegisterUser.executor": "Run",
     "Gradle.addressbook_web_tests [:generator.Generator.main()].executor": "Run",
     "JUnit.GroupCreationTests (1).executor": "Debug",
@@ -110,7 +113,7 @@
     "RunOnceActivity.git.unshallow": "true",
     "git-widget-placeholder": "main",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "D:/repository/java_for_testers/mantis_tests/src/test/java/ru/stqa/mantis",
+    "last_opened_file_path": "D:/repository/java_for_testers/mantis_tests/src/test/java",
     "onboarding.tips.debug.path": "D:/repository/java_for_testers/addressbook_web_tests/src/main/java/org/example/Main.java",
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.0",
@@ -120,6 +123,7 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\repository\java_for_testers\mantis_tests\src\test\java" />
       <recent name="D:\repository\java_for_testers\mantis_tests\src\test\java\ru\stqa\mantis" />
       <recent name="D:\repository\java_for_testers\mantis_tests" />
     </key>
@@ -131,9 +135,12 @@
       <recent name="D:\repository\java_for_testers\addressbook_web_tests\src\test\resources\images" />
       <recent name="D:\repository\java_for_testers\addressbook_web_tests\src\test\resources\avatar2" />
     </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="ru.stqa.mantis.manager" />
+    </key>
   </component>
-  <component name="RunManager" selected="Gradle.UserRegistrationTests.canRegisterUser">
-    <configuration name="JamesTests.canCreateUser" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+  <component name="RunManager" selected="Gradle.IssueCreationTests.canCreateIssue">
+    <configuration name="IssueCreationTests.canCreateIssue" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$/mantis_tests" />
@@ -146,31 +153,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;ru.stqa.mantis.tests.JamesTests.canCreateUser&quot;" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <RunAsTest>true</RunAsTest>
-      <method v="2" />
-    </configuration>
-    <configuration name="MailTests.canDrainInbox" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$/mantis_tests" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":test" />
-            <option value="--tests" />
-            <option value="&quot;ru.stqa.mantis.tests.MailTests.canDrainInbox&quot;" />
+            <option value="&quot;ru.stqa.mantis.tests.IssueCreationTests.canCreateIssue&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -229,6 +212,30 @@
       <RunAsTest>true</RunAsTest>
       <method v="2" />
     </configuration>
+    <configuration name="UserRegistrationTests.canCreateUser" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/mantis_tests" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;ru.stqa.mantis.tests.UserRegistrationTests.canCreateUser&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>true</RunAsTest>
+      <method v="2" />
+    </configuration>
     <configuration name="UserRegistrationTests.canRegisterUser" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -254,19 +261,19 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Gradle.JamesTests.canCreateUser" />
-      <item itemvalue="Gradle.MailTests.canDrainInbox" />
+      <item itemvalue="Gradle.IssueCreationTests.canCreateIssue" />
       <item itemvalue="Gradle.MailTests.canExtractUrl" />
       <item itemvalue="Gradle.MailTests.canReceiveEmail" />
+      <item itemvalue="Gradle.UserRegistrationTests.canCreateUser" />
       <item itemvalue="Gradle.UserRegistrationTests.canRegisterUser" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.IssueCreationTests.canCreateIssue" />
+        <item itemvalue="Gradle.UserRegistrationTests.canCreateUser" />
         <item itemvalue="Gradle.UserRegistrationTests.canRegisterUser" />
         <item itemvalue="Gradle.MailTests.canExtractUrl" />
         <item itemvalue="Gradle.MailTests.canReceiveEmail" />
-        <item itemvalue="Gradle.MailTests.canDrainInbox" />
-        <item itemvalue="Gradle.JamesTests.canCreateUser" />
       </list>
     </recent_temporary>
   </component>

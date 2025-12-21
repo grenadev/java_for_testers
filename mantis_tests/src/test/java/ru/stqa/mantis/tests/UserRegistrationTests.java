@@ -7,7 +7,7 @@ import java.time.Duration;
 import java.util.regex.Pattern;
 
 public class UserRegistrationTests extends TestBase{
-    
+
 
     @Test
     void canRegisterUser() {
@@ -17,6 +17,29 @@ public class UserRegistrationTests extends TestBase{
         } catch (InterruptedException e) {
             throw new RuntimeException(e);
         }
+        app.session().registration(name, name+"@localhost");
+        var messages = app.mail().receive(name + "@localhost", "password", Duration.ofSeconds(10));
+        var text = messages.get(0).content();
+        var pattern = Pattern.compile("http://\\S*");
+        var matcher = pattern.matcher(text);
+        String url = null;
+        if (matcher.find()) {
+            url = text.substring(matcher.start(), matcher.end()); // присваиваем
+        }
+        if (url != null) {
+            app.driver().get(url);
+        } else {
+            throw new RuntimeException("Ссылка не найдена");
+        }
+        app.session().submitRegistration(name, "password", "password");
+        app.http().login(name, "password");
+        app.http().isLoggedIn();
+    }
+
+    @Test
+    void canCreateUserWithApi() {
+        var name = CommonFunctions.randomString(8);
+        app.jamesApi().addUser(name + "@localhost", "password");
         app.session().registration(name, name+"@localhost");
         var messages = app.mail().receive(name + "@localhost", "password", Duration.ofSeconds(10));
         var text = messages.get(0).content();
