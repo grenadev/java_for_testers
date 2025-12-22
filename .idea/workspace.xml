@@ -139,7 +139,7 @@
       <recent name="ru.stqa.mantis.manager" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.IssueCreationTests.canCreateIssue">
+  <component name="RunManager" selected="Gradle.UserCreationTests.userRegistrationTestWithApi">
     <configuration name="IssueCreationTests.canCreateIssue" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -188,7 +188,7 @@
       <RunAsTest>true</RunAsTest>
       <method v="2" />
     </configuration>
-    <configuration name="MailTests.canReceiveEmail" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="UserCreationTests.userRegistrationTestWithApi" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$/mantis_tests" />
@@ -201,7 +201,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;ru.stqa.mantis.tests.MailTests.canReceiveEmail&quot;" />
+            <option value="&quot;ru.stqa.mantis.tests.UserCreationTests.userRegistrationTestWithApi&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -263,17 +263,17 @@
     <list>
       <item itemvalue="Gradle.IssueCreationTests.canCreateIssue" />
       <item itemvalue="Gradle.MailTests.canExtractUrl" />
-      <item itemvalue="Gradle.MailTests.canReceiveEmail" />
+      <item itemvalue="Gradle.UserCreationTests.userRegistrationTestWithApi" />
       <item itemvalue="Gradle.UserRegistrationTests.canCreateUser" />
       <item itemvalue="Gradle.UserRegistrationTests.canRegisterUser" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.UserCreationTests.userRegistrationTestWithApi" />
         <item itemvalue="Gradle.IssueCreationTests.canCreateIssue" />
         <item itemvalue="Gradle.UserRegistrationTests.canCreateUser" />
         <item itemvalue="Gradle.UserRegistrationTests.canRegisterUser" />
         <item itemvalue="Gradle.MailTests.canExtractUrl" />
-        <item itemvalue="Gradle.MailTests.canReceiveEmail" />
       </list>
     </recent_temporary>
   </component>
@@ -300,6 +300,7 @@
     <watches-manager>
       <configuration name="GradleRunConfiguration">
         <watch expression="contactMap" />
+        <watch expression="this" />
       </configuration>
     </watches-manager>
   </component>

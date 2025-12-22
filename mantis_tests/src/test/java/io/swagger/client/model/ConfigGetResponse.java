@@ -30,7 +30,7 @@ import java.util.List;
 /**
  * ConfigGetResponse
  */
-@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2025-12-21T19:38:04.107+03:00")
+@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2025-12-21T20:13:32.774+03:00")
 public class ConfigGetResponse {
   @SerializedName("configs")
   private List<ConfigAnyTypeOption> configs = null;
