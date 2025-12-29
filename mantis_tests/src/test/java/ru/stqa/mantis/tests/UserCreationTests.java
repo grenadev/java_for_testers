@@ -8,7 +8,7 @@ import java.time.Duration;
 import java.util.regex.Pattern;
 
 public class UserCreationTests extends  TestBase {
-    
+
 
     @Test
     void userRegistrationTestWithApi() {

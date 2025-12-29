@@ -72,6 +72,7 @@
     "Gradle.ContactCreationTests.canCreateContactAndAddToAGroup.executor": "Run",
     "Gradle.ContactCreationTests.canCreateContactInGroup.executor": "Run",
     "Gradle.ContactCreationTests.canCreateMultipleContacts.executor": "Run",
+    "Gradle.ContactCreationTests.executor": "Run",
     "Gradle.ContactInfoTests.testContactData.executor": "Debug",
     "Gradle.ContactInfoTests.testEmails.executor": "Debug",
     "Gradle.ContactInfoTests.testPhones.executor": "Debug",
@@ -99,6 +100,7 @@
     "Gradle.MailTests.canReceiveEmail.executor": "Run",
     "Gradle.Tests in 'addressbook_web_tests.test'.executor": "Run",
     "Gradle.Tests in 'tests'.executor": "Run",
+    "Gradle.UserCreationTests.userRegistrationTestWithApi.executor": "Debug",
     "Gradle.UserRegistrationTests.canCreateUser.executor": "Run",
     "Gradle.UserRegistrationTests.canRegisterUser.executor": "Run",
     "Gradle.addressbook_web_tests [:generator.Generator.main()].executor": "Run",
@@ -115,9 +117,9 @@
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "D:/repository/java_for_testers/mantis_tests/src/test/java",
     "onboarding.tips.debug.path": "D:/repository/java_for_testers/addressbook_web_tests/src/main/java/org/example/Main.java",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
     "settings.editor.selected.configurable": "reference.settingsdialog.project.gradle"
   }
 }]]></component>
@@ -139,7 +141,31 @@
       <recent name="ru.stqa.mantis.manager" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.UserCreationTests.userRegistrationTestWithApi">
+  <component name="RunManager" selected="Gradle.ContactCreationTests">
+    <configuration name="ContactCreationTests" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/addressbook_web_tests" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;tests.ContactCreationTests&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>true</RunAsTest>
+      <method v="2" />
+    </configuration>
     <configuration name="IssueCreationTests.canCreateIssue" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -154,30 +180,6 @@
             <option value=":test" />
             <option value="--tests" />
             <option value="&quot;ru.stqa.mantis.tests.IssueCreationTests.canCreateIssue&quot;" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <RunAsTest>true</RunAsTest>
-      <method v="2" />
-    </configuration>
-    <configuration name="MailTests.canExtractUrl" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$/mantis_tests" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":test" />
-            <option value="--tests" />
-            <option value="&quot;ru.stqa.mantis.tests.MailTests.canExtractUrl&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -261,19 +263,19 @@
       <method v="2" />
     </configuration>
     <list>
+      <item itemvalue="Gradle.ContactCreationTests" />
       <item itemvalue="Gradle.IssueCreationTests.canCreateIssue" />
-      <item itemvalue="Gradle.MailTests.canExtractUrl" />
       <item itemvalue="Gradle.UserCreationTests.userRegistrationTestWithApi" />
       <item itemvalue="Gradle.UserRegistrationTests.canCreateUser" />
       <item itemvalue="Gradle.UserRegistrationTests.canRegisterUser" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.ContactCreationTests" />
         <item itemvalue="Gradle.UserCreationTests.userRegistrationTestWithApi" />
         <item itemvalue="Gradle.IssueCreationTests.canCreateIssue" />
         <item itemvalue="Gradle.UserRegistrationTests.canCreateUser" />
         <item itemvalue="Gradle.UserRegistrationTests.canRegisterUser" />
-        <item itemvalue="Gradle.MailTests.canExtractUrl" />
       </list>
     </recent_temporary>
   </component>
@@ -295,6 +297,11 @@
           <properties class="org.opentest4j.AssertionFailedError" package="org.opentest4j" />
           <option name="timeStamp" value="21" />
         </breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/mantis_tests/src/test/java/ru/stqa/mantis/manager/RestApiHelper.java</url>
+          <line>48</line>
+          <option name="timeStamp" value="47" />
+        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
     <watches-manager>
